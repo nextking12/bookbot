@@ -1,6 +1,5 @@
-def word_count(text):
-    words = text.split()
-    return len(words)
+from stats import word_count
+
 
 def main():
     with open("books/frankenstein.txt") as f:
@@ -8,6 +7,6 @@ def main():
     
     # Print the number of words
     num_words = word_count(file_contents)
-    print(f"\nNumber of words in the book: {num_words}")
+    print(f"{num_words} words found in the document")
 
 main()
